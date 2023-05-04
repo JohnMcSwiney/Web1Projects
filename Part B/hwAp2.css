@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+body,
+html {
+  height: 1900px;
+}
+
+body {
+  background-image: url("../Photos/pexels-mark-stebnicki-2893639.jpg");
+  /* https://www.pexels.com/photo/photo-of-lettuce-lot-2893639/ */
+  backdrop-filter: blur(3px);
+  background-size: 100%;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+  grid-template-rows: 5% 30% 30% 40% 5%;
+  grid-template-areas:
+    "sidebar header header sidebar2"
+    "sidebar sect1 sect1 sidebar2"
+    "sidebar sect1 sect1 sidebar2"
+    "sidebar sect1 sect1 sidebar2"
+    "sidebar sect3 sect3 sidebar3"
+    ;
+}
+header {
+  grid-area: header;
+  text-align: center;
+}
+img {
+  height: 7cm;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1cm;
+  
+}
+
+table.test td {
+  margin: 6px 6px 6px 6px;
+  padding: 6px 12px 6px 12px;
+}
+
+table.test {
+  width: fit-content;
+  padding: 0% 5% 5% 5%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.pad {
+  padding: 25%;
+  text-align: right;
+}
+.padText {
+  padding-left: 3cm;
+}
+
+.alignRight{
+  padding-left:20%;
+  text-align:right;
+}
+.menu{
+  border-width: 2px; 
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.123); 
+  padding: 6px;
+}
+.menu td{
+  border-width: 2px; 
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.123);
+  width: fit-content; 
+}
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+h3{
+  font-size: .70rem;
+  font-weight: 300;
+  text-align: center;
+}
+th{
+  text-align:left;
+}
+div{
+  text-align: center;  
+}
+input {
+  border: none;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: hidden;
+  padding: 2%;
+}
+
+#s1 {
+  grid-area: sect1;
+  background-color: rgba(170, 167, 167, 0.616);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin: 0;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#s2 {
+  grid-area: sect2;
+  background-color: rgba(170, 167, 167, 0.616);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin: 0;
+}
+#s3 {
+  grid-area: sect3;
+}
+aside {
+  grid-area: sidebar;
+}
+aside.bruh {
+  grid-area: sidebar2;
+}

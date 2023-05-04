@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+
+body,
+html {
+  height: 1900px;
+}
+
+body {
+  background-image: url("Photos/jessica-johnston-e4wKnYSWh9M-unsplash.jpg");
+  /* https://unsplash.com/photos/e4wKnYSWh9M */
+  backdrop-filter: blur(3px);
+  background-size: 100%;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 15% 35% 35% 15%;
+  grid-template-rows: 23% 35% 13% 40%;
+  grid-template-areas:
+    "sidebar header header sidebar2"
+    "sidebar sect1 sect1 sidebar2"
+    "sidebar sect2 sect3 sidebar2"
+    "sidebar sect4 sect4 sidebar2"
+    "sidebar sect5 sect5 sidebar2"
+    "footer footer footer footer"
+    ;
+}
+header {
+  grid-area: header;
+  text-align: center;
+  background-color: rgba(224, 221, 221, 0.795);
+}
+img {
+  height: 7cm;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1cm;
+  
+}
+.cLabel{
+    font-size:small;
+}
+.padText {
+  padding-left: 3cm;
+}
+
+.alignRight{
+  text-align:right;
+}
+.alignLeft{
+    text-align: left;
+}
+
+.titleRow{
+    height: 30px;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+h4{
+    font-size: xx-small;
+    color:rgba(240, 248, 255, 0)
+}
+h3{
+  font-size: .70rem;
+  font-weight: 300;
+  text-align: center;
+}
+th{
+  text-align:left;
+}
+div{
+  text-align: center;  
+}
+input {
+  border: none;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: hidden;
+  padding: 2%;
+}
+
+#padL{
+    padding-left: 15%;
+}
+#padR{
+    padding-right: 15%;
+}
+
+#outTotal{
+    pointer-events: none;
+}
+button{
+    margin: auto;
+}
+#s1 {
+  grid-area: sect1;
+  background-color: rgb(224, 221, 221);
+  margin: 0;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+td{
+    width: 25%;
+}
+.result{
+    width:500px;
+    margin-left: 550px;
+}
+td.t1Left{
+    text-align: right;
+    padding: 0 10px;  
+}
+hr{
+    width: 100%;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+.alignCheckL{
+padding: 0 15px;  
+}
+.warning{
+    font-size: xx-small;
+}
+.Additions{
+    width: 30%;
+    margin: auto;
+}
+.Additions1{
+    width: 10%;
+    margin: auto;
+    text-align: right;
+}
+
+ #result{
+     text-align: left;
+     font-size: large;
+     font-weight: 400;
+     font-family: 'Averia Serif Libre', cursive;
+ }
+#s2 {
+  grid-area: sect2;
+  background-color: rgb(224, 221, 221);
+  margin: 0;
+}
+#s3 {
+  grid-area: sect3;
+  background-color: rgb(224, 221, 221);
+}
+#s4{
+    grid-area: sect4; 
+    background-color: rgb(224, 221, 221);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(105, 105, 105, 0.342) ;
+}
+aside {
+  grid-area: sidebar;
+}
+aside.bruh {
+  grid-area: sidebar2;
+}
+

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F4F9F9;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+input{
+    background-color: #00000038;
+    color: #FFFFFF;
+    border-radius: 7px;
+    padding: 3px;
+
+}
+input:focus {
+    border-width: 3px;
+    border-color: #4E598C;
+    background-color: #CCF2F4;
+}
+.container {
+    width: 80%;
+    background-color: #CCF2F4;
+    border-radius: 15px;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 8px 8px 20px rgba(14, 0, 12, 0.171);
+    
+}
+#userIn{
+    box-shadow: 4px 4px 10px rgba(14, 0, 12, 0.171);
+    width: 40%;
+    border-radius: 15px;
+    background-color: #A4EBF3;
+}
+div{
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+span{
+
+    font-size: large;
+    
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A4EBF3;
+    border-radius: 7px;
+    padding: 20px;
+}
+.goLeft{
+    text-align: left;
+}
+#resultcontainer{
+    padding-bottom: 60px;
+    background-color: #A4EBF3;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px rgba(14, 0, 12, 0.171);
+    width: 60%;
+}
+#searchvalue {
+    padding-top:3vh;
+}
+#idType {
+    text-align:center;
+}
+#searchresults2{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A4EBF3;
+    border-radius: 7px;
+    padding: 20px;
+    text-align: right;
+}
+#searchresults2 td{
+    text-align: left;
+}
+
+td{
+    padding: 3px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 10vh;
+}
+h2{
+    text-align: center;
+    padding-top:1.5vh;
+}
+h3{
+    text-align: center;
+}

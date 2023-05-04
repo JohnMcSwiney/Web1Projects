@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 5% 70.15% 19.85% 5%;
+  grid-template-rows: 30% 30% 35% 16.5%;
+  grid-template-areas:
+    "header header header header"
+    "sidebar sect1 sect2 sidebar2"
+    "sidebar sect1 sect2 sidebar2"
+    "footer footer footer footer";
+  background-image: url("Photos/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg");
+  /* https://unsplash.com/photos/KsAo8ouBn8A */
+  background-color: #717171;
+  background-repeat:space ;
+
+
+  background-size: 100%;
+}
+.headerlogo{
+    height: 5cm;
+    width:auto;
+    padding-top: .5cm;
+    clip:inherit;
+}
+.mySlides {
+  display: none;
+}
+h4{
+    font-size: xx-small;
+    color:rgba(240, 248, 255, 0)
+}
+img {
+  vertical-align: middle;
+  height: 18.75cm;
+  width: auto;
+  /* padding-left:22%; */
+  border-style: hidden;
+  border-width: 2px;
+  border-radius: 5px;
+}
+h1{
+    font-weight:700;
+    font-family: 'League Spartan', sans-serif;
+    font-size:100px;    
+    padding: 0;
+    text-shadow: .25cm .25cm .25cm rgba(0, 0, 0, 0.336);
+}
+
+h2{
+    font-weight: 700;
+    
+    font-family: 'League Spartan', sans-serif;
+    font-size:75px;
+}
+h4{
+  font-size: xx-small;
+  color:rgba(240, 248, 255, 0)
+}
+p{
+    font-weight: 100;
+    font-family: 'League Spartan', sans-serif; 
+    font-size: 35px;
+}
+a{
+    font-weight: 100;
+    font-family: 'League Spartan', sans-serif; 
+    font-size: 30px;
+    text-align:center;
+    color: whitesmoke;
+
+}
+/* Contact Table */
+table{
+    Margin: auto;
+}
+.contactTitle{
+    height: 40px;
+    padding-top: 1cm;
+    padding-left: 1cm;
+    /* font-weight: 400; */
+    font-family: 'Amatic SC', serif;
+    font-size: 40px;
+}
+.contactIcon{
+    height: 45px;
+}
+.contactIconimg{
+    height: 35px;
+    
+}
+.contactInfo{
+    height: 45px;
+    padding-left: 1cm;
+    /* font-weight: 400; */
+    font-family: 'Amatic SC', serif;
+    font-size: 30px;
+
+}
+
+.container-container{
+    border-style: hidden;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  padding: 3px;
+  background-color: rgba(65, 65, 65, 0.466);
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 8px 12px;
+  /* padding-left: 23%; */
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 6px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 15%;
+  display: inline-block;
+  transition: background-color 0.25s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  color: white;
+  background-color: #ffffff36;
+  
+}
+#s1 {
+  grid-area: sect1;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+}
+#s2 {
+  grid-area: sect2;
+  
+}
+aside {
+  grid-area: sidebar;
+}
+aside.bruh {
+  grid-area: sidebar2;
+}
+
+#footer{
+    grid-area: footer;
+    text-align: left;
+    background-color: #ffffff36;
+}

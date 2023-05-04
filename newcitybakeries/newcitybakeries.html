@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>New City Bakery</title>
+    <link rel="stylesheet" href="newcitybakeries.css" />
+    <meta charset="UTF-8" />
+    <script defer src="newcitybakeries.js"></script>
+</head>
+
+<body>
+    <!-- Hi Harinder I used Firefo to make this one, it looks very wrong in  -->
+    <header>
+        <img src="Photos/NewCityBakeries.png" alt="logo" />
+        <!-- I made this one using these -->
+        <!-- https://www.pngkey.com/detail/u2e6i1q8a9o0y3e6_birthday-cupcake-clipart-birthday-cupcakes-clip-art-birthday/ -->
+        <!-- https://www.cleanpng.com/png-black-and-white-pattern-white-floating-powder-71715/download-png.html -->
+
+        <h2>New City Bakeries</h2>
+
+    </header>
+
+    <section id="s1">
+        <h2> - Enter Personal Information - </h2>
+
+        <form onsubmit="storedata(); return false;">
+
+            <!-- <table>
+                Clear Button
+                <tr>
+                    <td>
+                        <div class="button">
+                            <button id="clearButton" onclick="clearAll();" id = "clearBtn">Clear</button>
+                        </div>
+                    </td>
+                </tr>
+            </table> -->
+
+            <table>
+                <!-- User Data -->
+                <tr>
+                    <td class="t1Left">
+                        <label for="FName">First name: </label>
+                    </td>
+                    <td>
+                         <input  class = "test3" type="text" id="FName" placeholder="First name " pattern="[A-Za-z -]{1,25}" autofocus
+                            required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1Left">
+                        <label for="LName">Last name: </label>
+                    </td>
+                    <td>
+                         <input class = "test3" type="text" id="LName" placeholder="Last name " pattern="[A-Za-z -]{1,25}" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1Left">
+                        <label for="Address">Address: </label>
+                    </td>
+                    <td>
+                         <input  class = "test3"  type="text" id="Address" placeholder="123 Placeholder nw " required>
+                        <br><label class="warning">123 Placeholder nw</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1Left">
+                        <label for="Phone"> Phone Number: </label>
+                    </td>
+                    <td>
+                         <input  type="tel" id="Phone" placeholder="123-456-7890"
+                            pattern="[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4}" size="10" required>
+                        <br><label class="warning">123-456-7890</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1Left">
+                        <label for="PostalCode">Postal Code: </label>
+                    </td>
+                    <td>
+                         <input  type="text" id="PostalCode" maxlength="6" placeholder="A1B2C3"
+                            pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}" size="4">
+                        <br><label class="warning">A1B2C3</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t1Left">
+                        <label for="Email">Email:</label><br>
+                    </td>
+                    <td>
+                         <input  type="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            placeholder="NewCityBakery@Email.com" required />
+                        <br><label class="warning">NewCityBakery@Email.com</label>
+                    </td>
+                </tr>
+
+            </table>
+            <div>
+                 <input  type="submit" value="submit">
+            </div>
+        </form>
+        <h2> - Enter Order Information - </h2>
+        <table>
+            <!-- Cake Type -->
+            <tr>
+                <td>
+                    <label for="cakeTypeS">
+                         <input  type="radio" id="cakeTypeS" name="cakeType" value="sheet" onclick="updateInfo()" checked>
+                        Sheet</label>
+
+                    <label for="cakeTypeR">
+                         <input  type="radio" id="cakeTypeR" name="cakeType" value="round" onclick="updateInfo()">
+                        Round</label>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section id="s2">
+        <h4> - </h4> <!-- to get rid of warning -->
+        <div>
+            <table>
+                <!-- Sheet Cake -->
+                <tr class="titleRow">
+                    <th class="alignRight">Sheet </th>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td class="alignRight">Layers : </td>
+
+                    <td>
+                         <input  type="number" id="Slayers" min="1" max="3" step="1" value="1"><br>
+                        <label for="Slayers" class="cLabel">1 - 3 Layers</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="alignRight">Length : </td>
+                    <td>
+                         <input  type="number" id="Slength" min="30" max="60" step="1" value="30"><br>
+                        <label for="Slength" class="cLabel">30 - 60 cm</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="alignRight">Width : </td>
+                    <td>
+                         <input  type="number" id="Swidth" min="30" max="45" step="1" value="30"><br>
+                        <label for="Swidth" class="cLabel">30 - 45 cm</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="s3">
+        <h4> - </h4> <!-- to get rid of warning -->
+        <div>
+            <table>
+                <!-- Round Cake -->
+                <tr class="titleRow">
+                    <th class="alignRight">Round </th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="alignRight">Layers : </td>
+                    <td> <input  type="number" id="Rlayers" min="1" max="3" step="1" value="1"><br>
+                        <label for="Rlayers" class="cLabel">1 - 3 Layers</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="alignRight">Radius : </td>
+                    <td> <input  type="number" id="Rradius" min="15" max="30" step="1" value="15"><br>
+                        <label for="Rradius" class="cLabel">15 - 30 cm</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="s4">
+        <table>
+            <!-- Total -->
+            <tr>
+                <td></td>
+                <td>Total</td>
+
+                <td> <input  id="outTotal">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="Additions">
+            <!-- Additonal options -->
+            <tr>
+
+                <td></td>
+
+                <th>Additonal Choices:</th>
+                <td></td>
+
+            </tr>
+
+            <tr>
+
+                <td class="Additions1"> <input  type="checkbox" id="extra1" name="extra1" value="Extra1"
+                        class="alignCheckL"></td>
+                <td class="Additions"><label for="extra1"> Cream Cheese icing: </label></td>
+                <td>5$</td>
+
+            </tr>
+            <tr>
+
+                <td class="Additions1"> <input  type="checkbox" id="extra2" name="extra2" value="Extra2"
+                        class="alignCheckL"></td>
+                <td class="Additions"><label for="extra2"> Fruit and Almonds topping: </label></td>
+                <td>7$</td>
+
+            </tr>
+            <tr>
+
+                <td class="Additions1"> <input  type="checkbox" id="extra3" name="extra3" value="Extra3"
+                        class="alignCheckL"></td>
+                <td class="Additions"><label for="extra3"> Fruit jam filling between layers: </label></td>
+                <td>4$</td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td class="alignLeft">
+                    <button type="button" onclick="storedata(); return false;" id = "OrderBtn"> Place Order </button>
+                </td>
+                <td></td>
+            </tr>
+
+        </table>
+
+        <table class = "result">
+            <tr>
+                <td>
+                <span id="ResTitle"></span>
+                </td>
+                <td>
+                </td>  
+            </tr>
+            <tr>
+                <td>
+                    <span id="ResText"></span>
+                </td>
+                <td>
+                    <span id="ResPrice1"></span>
+                </td>
+            </tr>
+            
+            <tr>
+            <td>
+                <span id="totalText"></span>
+            </td>
+            <td>
+                <span id="totalPrice"></span>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <span> <p>Total Cost:</p></span>
+                </td>
+                <td>
+                    <span id="totalPricefrTho"></span>
+                </td>
+                </tr>
+
+            <tr>
+                <td>
+                    <h3> Johnny McSwiney</h3>
+                </td>
+                <td>
+                    <h3>Mar 2022</h3>
+                </td>
+
+            </tr>
+        </table>
+        <div id="result"></div>
+        <!-- 
+        <button type = "button" onclick="printOrderInfo(); return false;"> Place Order </button>
+         -->
+    </section>
+
+
+</body>
+
+</html>

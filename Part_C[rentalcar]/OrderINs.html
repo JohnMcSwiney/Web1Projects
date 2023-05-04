@@ -1,0 +1,60 @@
+<form>
+    <table>
+        <span class = "center">
+            <h4> Order Details </h4>
+        </span>
+        <tr>
+            <td>
+                Length:
+            </td>
+            <td>
+                <input id = "DaysIn" class = "uIn" type = "number" name = "triplength" size = "15" min = "1" max = "30" onclick = "enableSubmit()">
+                <label for = "triplength" > Day(s)</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Type of vehicle:
+            </td>
+            <td>
+                <select class = "uIn" id="carType" name = "cartype" onclick="displaycar();">
+                    <option value = "15" > Compact </option>
+                    <option value = "20"> Mid-size </option>
+                    <option value = "35"> Luxury </option>
+                    <option value = "40"> Van/Truck </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Roof/Bicycle Rack:
+            </td>
+            <td>
+                <input type = "checkbox" id = "extra1" name = "extra1" value = "5">
+                <label for = "extra1" > + $5/day</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                GPS:
+            </td>
+            <td>
+                <input type = "checkbox" id = "extra2" name = "extra2" value = "10">
+                <label for = "extra2" > + $10 </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Child seat:
+            </td>
+            <td>
+                <input type = "checkbox" id = "extra3" name = "extra3" value = "Child Seat">
+                <label for = "extra3" > Free </label>
+            </td>
+        </tr>
+    </table>
+    <span class = "center">
+        <button id = "OrderBTN" onclick = "order(); return false;" onclick = "order();" disabled = "true"> SUBMIT ORDER </button>
+    </div>
+   
+</form>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    background-color: #000000;;
+    height: fit-content;
+    font-size: 3vh;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 80vh;
+    max-height: fit-content;
+    background-image: url(Photos/repeated-square-dark.webp);
+    /* https://www.toptal.com/designers/subtlepatterns/y-so-serious-light-pattern/ */
+    
+}
+aside:nth-child(1){
+    flex: 0 0 200px;
+}
+
+aside:nth-child(3){
+    flex: 0 0 200px;
+}
+article{
+    flex: 1 0 auto;
+}
+
+footer{
+    background-color: #000000;
+    min-height: 10vh;
+    display: flex;
+    gap: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    background-color: #000000;;
+    margin: 0;
+    /* https://unsplash.com/photos/xTaOPMa6wAE */
+    font-family: 'Open Sans', sans-serif;
+    color:aliceblue;
+}
+
+
+table{
+padding-left: 17vh;
+padding-bottom: 3vh;
+width: fit-content;
+}
+tr{
+    padding-bottom: 5vh;
+}
+th{
+    text-align: left;
+    width: fit-content;
+    font-size: 2.5vh;
+}
+.padL{
+    padding-left: 1vh;
+}
+td{
+    font-size: 2vh;
+}
+.qs{
+    background-color: aqua;
+}
+.linkntext{
+    
+    padding: 3vh;
+}
+
+#score{
+    background-color: rgba(41, 41, 41, 0.11);
+    border-radius: 3vh;
+    padding: 4vh;
+    margin: auto;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 500;
+    width: 40%;
+}
+hr{
+    width: 80%;
+}
+
+input[type='radio']:checked:after {
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 2vh;
+    left: -0.25vh;
+    top: -0.25vh;
+    position: relative;
+    background-color: #000000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+}
+h2{
+    padding-left:20vh;
+}

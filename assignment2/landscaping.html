@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ajax Display</title>
+    <meta name="generator" content="Bluefish 2.2.7">
+    <meta name="author" content="aschmidt">
+    <meta name="date" content="2016-03-04T08:40:27-0700">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="landscaping.css" rel="stylesheet" type="text/css">
+    <script defer src="landscaping.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src = "Photos/WuginLandscaping.png" alt = "logo" >
+    </header>
+
+    <section id = "s1">
+    <form onsubmit="storeCustomerinfo(); return false;">
+        <h1>
+            Wugin Landscaping
+        </h1>
+        <table>
+            <!-- User Data -->
+            <tr>
+                <td class="t1Left">
+                    <label for="FName">First name: </label>
+                </td>
+                <td>
+                    <input class="test3" type="text" id="FName" placeholder="First name " pattern="[A-Za-z -]{1,25}"
+                        autofocus required />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="t1Left">
+                    <label for="LName">Last name: </label>
+                </td>
+                <td>
+                    <input class="test3" type="text" id="LName" placeholder="Last name " pattern="[A-Za-z -]{1,25}"
+                        required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="t1Left">
+                    <label for="Address">Address: </label>
+                </td>
+                <td>
+                    <input class="test3" type="text" id="Address" placeholder="123 Placeholder nw " required>
+                    <br><label class="warning">123 Placeholder nw</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="t1Left">
+                    <label for="PostalCode">Postal Code: </label>
+                </td>
+                <td>
+                    <input type="text" id="PostalCode" maxlength="6" placeholder="A1B2C3"
+                        pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}" size="4">
+                    <br><label class="warning">A1B2C3</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="t1Left">
+                    <label for="Phone"> Phone Number: </label>
+                </td>
+                <td>
+                    <input type="tel" id="Phone" placeholder="1234567890"
+                        pattern="[0-9]{3}{1}[0-9]{3}{1}[0-9]{4}" size="10" required>
+                    <br><label class="warning">1234567890</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="t1Left">
+                    <label for="Email">Email:</label><br>
+                </td>
+                <td>
+                    <input type="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        placeholder="Wlandscaping@fuga.com" required />
+                    <br><label class="warning">Wlandscaping@fuga.com</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <table>
+        <tr>
+            <td>
+                <span class="pInput" id="squareBed">
+                    <img class="icon" src="Photos/noun-rectangular-prism-834860.png" alt="Rectangular">
+                </span>
+            </td>
+            <td>
+                <span class="pInput" id="circleBed">
+                    <img class="icon" src="Photos/noun-cylinder-2131159.png" alt="Cylinder">
+                </span>
+            </td>
+            <td>
+                <span class="pInput" id="hSphereBed">
+                    <img class="icon" src="Photos/noun-hemisphere-1442158.png" alt="Hemisphere">
+                </span>
+            </td>
+            <td>
+                <span class="pInput" id="tConeBed">
+                    <img class="icon" src="Photos/noun-truncated-cone-405754.png" alt="Beveled">
+                </span>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <span id="inputs">
+
+        </span>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <span id="output"></span>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</section>  
+
+</body>
+
+</html>

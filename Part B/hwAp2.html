@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Western Valley Farms</title>
+  <link rel="stylesheet" href="hwAp2.css" />
+  <meta charset="UTF-8" />
+  <script defer src="js.js"></script>
+</head>
+
+<body>
+  <header></header>
+
+  <section id="s1">
+    <img src="../Photos/WesternFamilyFarms.png" alt="logo" />
+    <h1> - Enter Personal Information - </h1>
+
+    <form onsubmit="storedata();return false">
+
+      <table class="test">
+        <tr>
+          <td class="pad">
+            <label for="CurrentDate"> Current Date: </label>
+            <br />
+          </td>
+          <td>
+            <input type="date" id="CurrentDate" required />
+            <br />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="pad">
+            <label for="name">Client Name: </label>
+            <br />
+          </td>
+          <td>
+            <input type="text" id="name" placeholder="Your Name " pattern="[A-Za-z]{1,25}" autofocus required />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td class="pad">
+            <label for="address"> Street Address: </label>
+            <br />
+          </td>
+          <td>
+            <input type="text" id="address" maxlength="35" placeholder="123 Abc SW" required />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td class="pad">
+            <label for="PostalCode">Postal Code: </label>
+            <br />
+          </td>
+          <td>
+            <input type="text" id="PostalCode" maxlength="6" placeholder="A1B2C3"
+              pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}" size="4" />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td class="pad">
+            <label for="Phone"> Phone Number: </label><br />
+            <br /><br /><br /><br />
+          </td>
+          <td>
+            <input type="tel" id="Phone" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" size="10"
+              required /><br />
+            <br />
+
+            <input type="radio" id="PhoneType1" name="Ptype" value="Personal" />
+            <label for="PhoneType1">- Personal </label><br />
+
+            <input type="radio" id="PhoneType2" name="Ptype" value="Buisness" />
+            <label for="PhoneType2">- Buisness </label><br />
+            <!-- radio buttons for buisness / personal -->
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td class="pad">
+            <label>Email:</label>
+            <br />
+          </td>
+          <td>
+            <input type="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="WesternValley@Email.com" required />
+            <br />
+          </td>
+        </tr>
+
+      </table>
+      <div>
+        <p>Option: </p>
+        <input type="radio" name="dtype" value="Pickup">Pickup
+        <input type="radio" name="dtype" value="Delivery">Delivery
+        <!-- <input type="radio" id="delivery" name="Dtype" value="Pickup" />
+          <label for="delivery">- Pickup </label><br />
+
+          <input type="radio" id="delivery" name="Dtype" value="Delivery" />
+          <label for="delivery">- Delivery </label><br /> -->
+        <br />
+      </div>
+
+
+
+
+
+
+      <!-- </section>
+
+    <section id="s2"> -->
+      <h1> - Enter Order Information - </h1>
+      <table class="menu">
+        <tbody>
+          <tr>
+
+            <th>Hamper Type: </th>
+            <th>Prices: </th>
+            <th>&nbsp;</th>
+
+          </tr>
+          <tr>
+
+            <td>Vegtable Hamper</td>
+            <td>20 kg: $30.00</td>
+            <td>
+              <input type="number" id="vegnum" min="1" step="1" value="1">
+            </td>
+
+          </tr>
+          <tr>
+
+
+            <td>Fruit Hamper</td>
+            <td>10 kg: $20.00</td>
+            <td>
+              <input type="number" id="fruitnum" min="1" step="1" value="1">
+            </td>
+
+          </tr>
+          <tr>
+
+
+            <td>Fresh Chickens</td>
+            <td>$7.00 per Chicken</td>
+            <td>
+              <input type="number" id="chickennum" min="0" step="1" value="0">
+            </td>
+
+          </tr>
+          <tr>
+
+
+            <td>Pork</td>
+            <td>$5 /kg</td>
+            <td>
+              <input type="number" id="porknum" min="0" step="1" value="0">
+            </td>
+
+          </tr>
+
+        </tbody>
+      </table>
+      <br>
+
+      <div>
+        <input type="submit" value="submit">
+      </div>
+    </form>
+    <div id="result"></div>
+
+
+    <h3> Johnny McSwiney - Feb 2022 - CPRG 256 </h3>
+  </section>
+
+  <section id="s3"> 
+    <h3> Johnny McSwiney - Feb 2022 - CPRG 256 </h3>
+  </section>
+
+
+</body>
+
+</html>

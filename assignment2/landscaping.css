@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+  background-color: lightyellow;
+  background-image: url(photos/elizabeth-lies-YbgPWfWlvkE-unsplash.jpg);
+  background-size: 100%;
+  /* https://unsplash.com/photos/YbgPWfWlvkE */
+  margin: 0;
+  display: grid;
+  grid-template-columns: 32% 36% 32%;
+  grid-template-rows: 40% 76.3%;
+  grid-template-areas:
+    "sidebar header sidebar2"
+    "sidebar sect1 sidebar2"
+    ;
+    font-family: 'Inconsolata', monospace;
+}
+table {
+  background-color: wheat;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon {
+  width: 3vh;
+  height: auto;
+  padding: 5vh;
+}
+
+h2,
+h1 {
+    font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 5vh;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+
+#s1 {
+  grid-area: sect1;
+  background-color: wheat;
+  border-radius: 30px;
+  margin: 0;
+}
+aside {
+  grid-area: sidebar;
+}
+aside.bruh {
+  grid-area: sidebar2;
+}
+button {  
+  background-color: rgb(247, 247, 247);  
+  color: black;  
+  font-size: 15px;  
+  margin: auto;
+  border-radius: 5px;
+} 
+ 
+input[type = "submit"] {  
+  background-color: rgb(247, 247, 247);  
+  color: black;  
+  font-size: 15px;  
+  margin: auto; 
+  border-radius: 5px; 
+} 
+input:disabled{  
+  background-color: rgb(247, 247, 247);  
+  color: rgb(231, 40, 40);  
+  font-size: 15px;  
+  margin: auto; 
+  border-radius: 5px; 
+} 

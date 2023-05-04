@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    color: black;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-rows: 5% 30% 30% 40% 5%;
+    grid-template-areas:
+      "sidebar header header sidebar2"
+      "sidebar sect1 sect1 sidebar2"
+      "sidebar sect1 sect1 sidebar2"
+      "sidebar sect1 sect1 sidebar2"
+      "sidebar sect1 sect1 sidebar3"
+      ;
+    background-image: url("Photos/514807-PIKIWS-173.jpg");
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+  }
+#s1 {
+    grid-area: sect1;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 0;
+  }
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:separate;
+    border:solid rgb(55, 219, 255) 2px;
+    border-bottom-left-radius: 0.25cm;
+    border-bottom-right-radius: 0.25cm;
+    background-color: rgba(219, 214, 214, 0.795); 
+    box-shadow: 10px 10px 5px #2c2b2b28;
+    border-collapse:separate;
+    border-spacing: 0cm;
+  }
+  
+  #s2 {
+    grid-area: sect2;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 0;
+  }
+  #s3 {
+    grid-area: sect3;
+  }
+  aside {
+    grid-area: sidebar;
+  }
+  aside.bruh {
+    grid-area: sidebar2;
+  }
+
+button:hover{
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.center1{
+    text-align: center;
+    padding-bottom: 5%;
+  }
+td{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+th{
+    background-color: rgb(55, 219, 255);
+    border: none;
+    
+
+}
+img{
+    height: 200px;
+}
+
+div{
+    margin:0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5% 0% 2.5% 32.5%;
+}
+div.button{
+    padding: 2.5% 0% 2.5% 45%;
+}
+
+.th3{
+    font-size: smaller;
+}
+.th1{
+    font-size: 200%;
+    font-weight: 500;
+    padding-bottom: 0.5cm;
+}
+
+a{
+    font-size: xx-small;
+}
+
+
+
+
+  input {
+    width: 3cm;
+    border: solid 1px;
+    text-align: center;
+    border-radius: 0.25cm;
+    box-shadow: 2.5px 2.5px 2.5px #2c2b2b28;
+    background-color: rgba(248, 248, 248, 0.603);
+    color: rgb(0, 0, 0);
+  }
+
+  input:focus{
+    outline:none;
+      border-color: rgb(55, 219, 255);
+      box-shadow:0 0 2.7px rgb(55, 219, 255);
+  }
+  
+  label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    font-weight: bold;
+    padding-right: 3cm;
+    text-shadow: 10px 10px 5px #2c2b2b28;
+  }
+  a{
+      color: rgb(55, 219, 255);
+      padding-bottom: 5%;
+  }
+  .invisibletext{
+          color: rgba(248, 248, 248, 0);
+      
+  }

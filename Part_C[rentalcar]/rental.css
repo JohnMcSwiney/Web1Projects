@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #BCACAA;
+
+}
+
+header {
+    display: flex;
+    gap: 30vh;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    background-color: #28252E;
+    min-height: 10vh;
+}
+.header{
+    justify-content: center;
+    padding-left: 70vh;
+}
+#date-time{
+    color:#BCACAA;
+
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 80vh;
+    max-height: fit-content;
+    background-image: url(photos/kevin-clark-T_O0lA-x9G4-unsplash.jpg);
+}
+aside:nth-child(1){
+    flex: 0 0 200px;
+}
+
+aside:nth-child(3){
+    flex: 0 0 200px;
+}
+article{
+    flex: 1 0 auto;
+}
+
+footer{
+    background-color: #000000;
+    min-height: 10vh;
+    display: flex;
+    gap: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#BCACAA;
+}
+  aside {
+    grid-area: sidebar;
+  }
+  aside.bruh {
+    grid-area: sidebar2;
+  }
+  h1{
+      color:#BCACAA;
+      font-size: 6vh;
+      
+  }
+  h2{
+      font-size: 5vh;
+      padding: 1vh;
+  }
+  h3{
+      font-size: 3vh;
+      padding: 1vh;
+      text-align: center; 
+  }
+  h4{
+      font-size: 2vh;
+  }
+  p{
+    font-size: 2.5vh;
+    padding: 2vh;    
+}
+a{
+    color: #653E3E;
+}
+a:visited{
+    color:#B06046;
+}
+a:hover{
+    color:#28252E;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    text-align: left;
+}
+td{
+    padding: 0.5vh;
+}
+.uIn{
+    height: 3vh;
+    padding-left: .25vh;
+    background-color: rgba(255, 255, 255, 0.822);
+    border: solid 0.1vh #28252E;
+    border-radius: 0.25vh;
+}
+input:focus {
+    outline: none;
+    border-color: #B06046;
+  }
+input:disabled{
+    background-color: #28252e00;
+}
+
+
+input[type='radio']:checked:after {
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 2vh;
+    left: -0.25vh;
+    top: -0.25vh;
+    position: relative;
+    background-color: #28252E;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+}
+
+
+
+.container{
+    background: #ffffff;
+    width: auto;
+    position: relative;
+    
+}
+#ordercontainer{
+    display: flex;
+    justify-content: center;
+    background-color: #bcacaac5;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+    padding: 3vh;
+}
+.input-container{
+    background-color: #bcacaac5;
+    border-radius: 3vh;
+    padding: 2vh;
+    height:fit-content;
+    
+}
+.searchpage{
+    background-image: url("photos/michael-held-_XTFkRVCVy0-unsplash.jpg");
+}
+
+.linkntext{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #bcacaac5;
+    
+    border-radius: 3vh;
+    padding: 4vh;
+    /* padding: 2vh; */
+}
+.center{
+    
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+    text-align: center; 
+
+}
+
+button{
+    padding: 0.5vh 1vh 0.5vh 1vh;
+    border-radius: 0.25vh;
+}
+
+img{
+    max-height: 20vh;
+    border-radius: 3vh;
+    box-shadow: .5vh .25vh 1vh rgba(42, 42, 44, 0.329);
+}
