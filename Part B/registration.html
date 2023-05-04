@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Western Columbia Grocers</title>
+    <meta charset="UTF-8">
+    <meta name="Johnny McSwiney" content="WCG Registration">
+    <meta name="date" content="2022-01-28">
+    <link rel="stylesheet" href="styleb.css">
+
+</head>
+
+<body>
+    <div class = "div2">
+        <h1>
+            Western Columbia Grocers Registration
+        </h1>
+            <form action="mailto:http://localhost/registrationform.html" method = "GET" class = "fsForm">
+                <p class = "talignmid">Please enter your information:</p>
+           
+                <div>
+                    <label for="Name">Name: </label>
+                    <input type="text" id="Name" maxlength="25" 
+                    placeholder="Your Name here (Max 25)" 
+                    pattern="[A-Za-z-]" autofocus required >
+                </div>
+            
+               <div>
+                    <label for="Address">Address: </label>
+                    <input type="text" id="Address"  placeholder = "66 Sandarac Dr NW" required >
+                </div>
+
+                <div>
+                    <label for="TelephoneNumber">Telephone Number: </label>
+                    <input type="tel" id="TelephoneNumber"  placeholder="123-456-7890" 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+                </div>
+                
+                <div>
+                    <label for="Age">Age: </label>
+                    <input type="tel" id="Age"  Placeholder="96">
+                </div>
+
+                <div>
+                    <label for="Email">E-mail Address: </label>
+                    <input type="email" id="Email"  pattern="[^@\s]+@[^@\s]+" 
+                    placeholder="ColumbiaGrocers@email.com" required >
+                </div>
+
+                <div>
+                    <label for="RegDate">Registration: </label>
+                    <input type="date" id="RegDate" required>
+                </div>
+                <div>
+                    <br>
+                    <input type="submit" value="Submit" class="aligncenter">
+                    <br> 
+                    <input type="reset" value="Reset" class="aligncenter">
+                    <br>
+                </div>
+            </form>
+    </div>
+</body>
+</html>

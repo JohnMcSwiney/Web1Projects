@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<HTML lang = "en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name = "viewport" content = "width = device-sidth, internal-scale=1.0">
+    <title> Index3.html</title>
+    <style>
+        .center {
+         text-align: center
+        }
+        </style> 
+</head>
+<body>
+  
+    
+
+    <h1 class="center"> Welcome </h1>
+    <h2 class="center"> Part B</h2>
+    <p class="center">Johnny McSwiney's Lab 1</p>
+    <hr color = "crimson" size = "3px" Width = "50%">
+    <p class="center">This is a web survey for potential SAIT students</p>
+    <p class="center">Please provide feedback about the SAIT campus</p>
+    
+    <hr color = "crimson" size = "3px" Width = "50%">
+    <br>
+
+
+<form action="mailto:John.mcswiney@edu.sait.ca" method = "GET">
+    <p>Enter Contact Info:</p>
+    <table>
+        <!-- <tr>Enter Contact Info </tr> -->
+    <tr>
+        
+
+    <td><label for="Name">Name </label></td><td><input type="text" 
+        id="Name" size="15px" autofocus required ></td>
+        </tr>
+    <tr>
+    <td><label for="Email_address">Email address </label></td><td><input type="text" 
+        id="Email_address" size="20px" required ></td>
+        <tr>
+    <td><label for="Contact_Phone">Contact Phone </label></td><td><input type="text" 
+        id="Contact_Phone" size = "12"></td>
+    </tr>
+   
+</table>
+
+<br>
+<hr color = "crimson" size = "3px" Width = "50%">
+<br>
+
+<!-- <label for = "checkbox" > Choose your favourite aspect of the SAIT campus </label> -->
+
+<label>
+    Choose your favourite aspect of the SAIT campus: 
+    <input name = "checkbox">
+</label>
+<br>
+<input type = "checkbox" value ="" name = "c1"> The View <br>
+<input type = "checkbox" value ="" name = "c2"> Campus Location <br>
+<input type = "checkbox" value ="" name = "c3"> Athletic Centre <br>
+<input type = "checkbox" value ="" name = "c4"> Student Centre <br>
+<input type = "checkbox" value ="" name = "c5"> Lab Classes <br>
+
+<br>
+<hr color = "crimson" size = "3px" Width = "50%">
+<br>
+
+<H2>How did you become interested in SAIT?</H2>
+<!-- <label for ="radio"> Choose one: </label> -->
+
+<label>
+    Choose one: <input name ="radio">
+</label>
+
+<br>
+<table>
+    <tr>
+        
+        <td><input type = "radio" id = "radio1" value = "Open House" name = "radio1"> Open House</td>
+        <td><input type = "radio" id = "radio2" value = "Online Advertising" name = "radio1"> Online Advertising</td>
+        <td><input type = "radio" id = "radio3" value = "School Counselling" name = "radio1"> School Counselling</td>
+        <td><input type = "radio" id = "radio4" value = "Word of Mouth" name ="radio1"> Word of Mouth</td>
+    </tr>
+</table>
+
+<br>
+<hr color = "crimson" size = "3px" Width = "50%">
+<br>
+<h3>Thank you for completeing the survey!</h3>
+<p>Please click submit and email the results when prompted.</p>
+<br>
+
+<input type="submit" value="Submit">
+<br>
+<br>
+<input type="reset" value="Reset">
+<br>
+</form>
+<br>
+<br>
+<br>
+</body>
+</HTML>

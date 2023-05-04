@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+body {
+    font-family: 'Courier Prime', monospace;
+    background-image: url("../Photos/thomas-le-pRJhn4MbsMM-unsplash.jpg");
+    /*https://unsplash.com/photos/pRJhn4MbsMM*/
+    background-position: center center;
+    background-size: 60cm, cover;
+    margin: 10%;
+    Padding: 0%;
+   
+}
+h1{
+    font-family: 'Dongle', sans-serif;
+    color:azure;
+    font-size: 350%;
+    text-align: center;
+    
+}
+p{
+    font-family: 'Dongle', sans-serif;
+    color:azure;
+    font-size: 250%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+div{
+    padding: 1%;
+    align-self: center;
+}
+.div2{
+    background-color: rgba(54, 57, 63, 0.582);
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: black;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+table{
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: center;
+}
+label{
+    align-self: center;
+    font-size: 200%;
+    padding-left: 15%;
+    color:azure;
+    font-family: 'Dongle', sans-serif;
+}
+.padleft10{
+    padding-left: 10%
+}
+.talignmid{
+    text-align: center;
+}
+.aligncenter{
+    align-items: center;
+}
+/* .fsBody .fsForm {width:800px;} */
